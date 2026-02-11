@@ -44,7 +44,7 @@ Screenshots:
 
 <p align="center">
   <b>Home</b><br>
-  <img width="250" alt="Screenshot 2026-02-11 at 3 10 51 PM" src="https://github.com/user-attachments/assets/7f62f75e-0d38-424e-8f19-272ac81ab0a0" />
+  <img width="250" alt="Screenshot 2026-02-11 at 3 38 50 PM" src="https://github.com/user-attachments/assets/9c6aa88d-b458-4f95-924a-a341d983340d" />
 </p>
 <p align="center">
   <b>My Netflix</b><br>
