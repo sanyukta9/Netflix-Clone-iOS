@@ -113,25 +113,41 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nEr-pH-u4c">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="221" translatesAutoresizingMaskIntoConstraints="NO" id="2mE-mN-rky">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="2mE-mN-rky">
                                         <rect key="frame" x="16" y="45" width="361" height="70"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Guest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-si-G5d">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="70"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Guest" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-si-G5d">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="AS4-3c-dr3"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TC-fu-kMN">
+                                                <rect key="frame" x="300" y="0.0" width="61" height="70"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8TC-fu-kMN" secondAttribute="trailing" id="1XQ-84-12C"/>
+                                            <constraint firstAttribute="bottom" secondItem="8TC-fu-kMN" secondAttribute="bottom" id="2EO-oM-qSt"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="mga-C2-9kr"/>
+                                            <constraint firstItem="8TC-fu-kMN" firstAttribute="top" secondItem="2mE-mN-rky" secondAttribute="top" id="myi-NO-I25"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2mE-mN-rky" secondAttribute="trailing" constant="16" id="DmV-h5-Qde"/>
+                                    <constraint firstAttribute="bottom" secondItem="2mE-mN-rky" secondAttribute="bottom" constant="45" id="QDc-8c-3pd"/>
                                     <constraint firstAttribute="trailing" secondItem="2mE-mN-rky" secondAttribute="trailing" constant="16" id="W1m-le-0FP"/>
                                     <constraint firstItem="2mE-mN-rky" firstAttribute="top" secondItem="nEr-pH-u4c" secondAttribute="top" constant="45" id="YZE-cl-Ytb"/>
+                                    <constraint firstItem="2mE-mN-rky" firstAttribute="top" secondItem="nEr-pH-u4c" secondAttribute="top" constant="45" id="ZMV-9I-jN5"/>
+                                    <constraint firstItem="2mE-mN-rky" firstAttribute="leading" secondItem="nEr-pH-u4c" secondAttribute="leading" constant="16" id="aFd-0b-ODH"/>
                                     <constraint firstItem="2mE-mN-rky" firstAttribute="leading" secondItem="nEr-pH-u4c" secondAttribute="leading" constant="16" id="dI6-fI-bXv"/>
                                     <constraint firstAttribute="bottom" secondItem="2mE-mN-rky" secondAttribute="bottom" constant="45" id="hPn-9R-oPw"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="mRe-hp-k6M"/>
@@ -327,6 +343,7 @@
     <resources>
         <image name="Logo" width="1024" height="1024"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
