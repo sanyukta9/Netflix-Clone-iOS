@@ -11,11 +11,6 @@ class HomeTabBarController: UITabBarController {
     
     @IBOutlet weak var homeTabBar: UITabBar!
     
-    @IBOutlet weak var homeTab: UITabBarItem!
-    
-    
-    @IBOutlet weak var myNetflixTab: UITabBarItem!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
