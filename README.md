@@ -39,3 +39,10 @@
 - Play button for future **video playback integration**
 
 ---
+
+Screenshots:
+
+<img width="742" height="1556" alt="Screenshot 2026-02-11 at 3 10 51 PM" src="https://github.com/user-attachments/assets/7f62f75e-0d38-424e-8f19-272ac81ab0a0" />
+#### Home
+<img width="373" height="778" alt="Screenshot 2026-02-11 at 3 14 30 PM" src="https://github.com/user-attachments/assets/4638a1c3-0c23-4a71-80b4-b5b24f852021" />
+#### My Netflix
