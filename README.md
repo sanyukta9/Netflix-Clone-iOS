@@ -22,19 +22,19 @@
 
 ## Work In Progress:
 
-### Top Navigation — "For \<User\>"
+### 1. Top Navigation — "For \<User\>"
 - Navigation bar shows **"For Guest"** when no user is logged in
 - After successful **Sign In or Sign Up**, `Guest` is replaced with the user's **display name**
 
-### 🔍 Search Functionality
+### 2. Search Functionality
 - Live search using **TMDB `/search/movie` endpoint**
 - Results displayed in a **3-column grid** `UICollectionView`
 
-### My Netflix — Sign In / Sign Up
+### 3. My Netflix — Sign In / Sign Up
 - Supports both **Sign In** (existing users) and **Sign Up** (new users)
 - **"Continue as Guest"** option skips auth and browses anonymously\
 
-### 🎞 Movie Detail & Playback
+### 4. Movie Detail & Playback
 - Tap any movie poster to open a **Movie Detail screen**
 - Play button for future **video playback integration**
 
