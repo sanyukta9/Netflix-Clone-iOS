@@ -18,7 +18,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="homeTab" destination="xwc-W5-ji3" id="gj7-x2-HWK"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8gF-pU-RBe"/>
                     </connections>
                 </navigationController>
@@ -317,7 +316,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="myNetflixTab" destination="FbR-aN-Ap5" id="fdc-59-qqi"/>
                         <segue destination="1E6-FO-cKn" kind="relationship" relationship="rootViewController" id="d92-8E-hBG"/>
                     </connections>
                 </navigationController>
