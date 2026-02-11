@@ -6,7 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5DDADF24EE51B45BB5E1879D /* Pods_NetflixClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBAA0518AAB2DE80D730590 /* Pods_NetflixClone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE7D4DDF2F38F4EA0056ED23 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4DBAA0518AAB2DE80D730590 /* Pods_NetflixClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflixClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EFC60BE65780191614D4EC0 /* Pods-NetflixClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixClone.release.xcconfig"; path = "Target Support Files/Pods-NetflixClone/Pods-NetflixClone.release.xcconfig"; sourceTree = "<group>"; };
+		A96C482E63FD9A55D42588C6 /* Pods-NetflixClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixClone.debug.xcconfig"; path = "Target Support Files/Pods-NetflixClone/Pods-NetflixClone.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA36ECA2F347599002E8A72 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -36,17 +56,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DDADF24EE51B45BB5E1879D /* Pods_NetflixClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006BBE7A5990C67191B8D7F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DBAA0518AAB2DE80D730590 /* Pods_NetflixClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		959E4E35AA56EB676FE10BC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A96C482E63FD9A55D42588C6 /* Pods-NetflixClone.debug.xcconfig */,
+				5EFC60BE65780191614D4EC0 /* Pods-NetflixClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FEA36EC12F347599002E8A72 = {
 			isa = PBXGroup;
 			children = (
 				FEA36ECC2F347599002E8A72 /* NetflixClone */,
 				FEA36ECB2F347599002E8A72 /* Products */,
+				959E4E35AA56EB676FE10BC2 /* Pods */,
+				006BBE7A5990C67191B8D7F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEA36EDD2F34759B002E8A72 /* Build configuration list for PBXNativeTarget "NetflixClone" */;
 			buildPhases = (
+				6160CF8C803E5AB7FFF20F40 /* [CP] Check Pods Manifest.lock */,
 				FEA36EC62F347599002E8A72 /* Sources */,
 				FEA36EC72F347599002E8A72 /* Frameworks */,
 				FEA36EC82F347599002E8A72 /* Resources */,
+				FE7D4DDF2F38F4EA0056ED23 /* Embed Frameworks */,
+				29AFC4F365879D5FF4302A16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +120,6 @@
 				FEA36ECC2F347599002E8A72 /* NetflixClone */,
 			);
 			name = NetflixClone;
-			packageProductDependencies = (
-			);
 			productName = NetflixClone;
 			productReference = FEA36ECA2F347599002E8A72 /* NetflixClone.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +168,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29AFC4F365879D5FF4302A16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetflixClone/Pods-NetflixClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetflixClone/Pods-NetflixClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetflixClone/Pods-NetflixClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6160CF8C803E5AB7FFF20F40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetflixClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FEA36EC62F347599002E8A72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +227,7 @@
 /* Begin XCBuildConfiguration section */
 		FEA36EDE2F34759B002E8A72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A96C482E63FD9A55D42588C6 /* Pods-NetflixClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -172,6 +260,7 @@
 		};
 		FEA36EDF2F34759B002E8A72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFC60BE65780191614D4EC0 /* Pods-NetflixClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
