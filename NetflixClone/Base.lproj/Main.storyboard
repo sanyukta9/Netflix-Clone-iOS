@@ -18,6 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="homeTab" destination="xwc-W5-ji3" id="gj7-x2-HWK"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8gF-pU-RBe"/>
                     </connections>
                 </navigationController>
@@ -210,6 +211,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="SIGN UP" cornerStyle="fixed"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="1E6-FO-cKn" eventType="touchUpInside" id="45w-mS-rpS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -280,10 +284,10 @@
             </objects>
             <point key="canvasLocation" x="107.63358778625954" y="757.74647887323943"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--HomeTabBarController-->
         <scene sceneID="THf-UW-fBl">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sU9-dJ-nZm" sceneMemberID="viewController">
+                <tabBarController title="HomeTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="sU9-dJ-nZm" customClass="HomeTabBarController" customModule="NetflixClone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="AJ0-xz-FFR"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RkU-4O-Qvc">
@@ -294,6 +298,7 @@
                         <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
+                        <outlet property="homeTabBar" destination="RkU-4O-Qvc" id="M99-Cd-Pm3"/>
                         <segue destination="Gxx-Rs-YPQ" kind="relationship" relationship="viewControllers" id="fPG-78-1hT"/>
                         <segue destination="x47-Va-6VA" kind="relationship" relationship="viewControllers" id="2cS-6t-tEy"/>
                     </connections>
@@ -312,6 +317,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="myNetflixTab" destination="FbR-aN-Ap5" id="fdc-59-qqi"/>
                         <segue destination="1E6-FO-cKn" kind="relationship" relationship="rootViewController" id="d92-8E-hBG"/>
                     </connections>
                 </navigationController>
