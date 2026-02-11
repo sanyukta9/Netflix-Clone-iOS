@@ -42,11 +42,13 @@
 
 Screenshots:
 
-<p align="center">
-  <b>Home</b><br>
-  <img width="250" alt="Screenshot 2026-02-11 at 3 38 50 PM" src="https://github.com/user-attachments/assets/9c6aa88d-b458-4f95-924a-a341d983340d" />
-</p>
-<p align="center">
-  <b>My Netflix</b><br>
-<img width="250" alt="Screenshot 2026-02-11 at 3 14 30 PM" src="https://github.com/user-attachments/assets/4638a1c3-0c23-4a71-80b4-b5b24f852021" />
-</p>
+<table>
+  <tr>
+    <td align="center"><b>Home</b></td>
+    <td align="center"><b>My Netflix</b></td>
+  </tr>
+  <tr>
+    <td><img width="250" alt="Screenshot 2026-02-11 at 3 38 50 PM" src="https://github.com/user-attachments/assets/9c6aa88d-b458-4f95-924a-a341d983340d" /></td>
+    <td><img width="250" alt="Screenshot 2026-02-11 at 3 14 30 PM" src="https://github.com/user-attachments/assets/4638a1c3-0c23-4a71-80b4-b5b24f852021" /></td>
+  </tr>
+</table>
