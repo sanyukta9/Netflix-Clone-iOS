@@ -14,6 +14,6 @@ struct Results: Codable {
     //https://image.tmdb.org/t/p/w500/wDWwtvkRRlgTiUr6TyLSMX8FCuZ.jpg
     var posterURL: String? {
         guard let posterPath = poster_path else { return nil }
-        return Constants().imageBaseURL + posterPath
+        return Constants.imageBaseURL + posterPath
     }
 }

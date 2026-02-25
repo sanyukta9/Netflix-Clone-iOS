@@ -13,7 +13,6 @@ class MyNetflixViewController: UIViewController {
     @IBAction func signInTapped(_ sender: UIButton) {
     }
     
-    
     @IBAction func signUpTapped(_ sender: UIButton) {
     }
     

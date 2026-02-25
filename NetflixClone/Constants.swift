@@ -6,14 +6,14 @@
 //
 
 struct Constants {
-    let apiKey = "9a7a83ab6ed564c44e09ef91526db920"
-    let baseURL = "https://api.themoviedb.org/3"
-    let imageBaseURL = "https://image.tmdb.org/t/p/w500"
+    static let apiKey = "9a7a83ab6ed564c44e09ef91526db920"
+    static let baseURL = "https://api.themoviedb.org/3"
+    static let imageBaseURL = "https://image.tmdb.org/t/p/w500"
     
     //MARK: - API endpoints
-    let nowPlaying = "/movie/now_playing"
-    let trendingNow = "/trending/movie/day"
-    let popularShows = "/movie/popular"
-    let topRated = "/movie/top_rated"
-    let recommendedForYou = "/movie/upcoming"
+    static let nowPlaying = "/movie/now_playing"
+    static let trendingNow = "/trending/movie/day"
+    static let popularShows = "/movie/popular"
+    static let topRated = "/movie/top_rated"
+    static let recommendedForYou = "/movie/upcoming"
 }

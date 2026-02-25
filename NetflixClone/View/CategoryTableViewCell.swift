@@ -69,10 +69,7 @@ extension CategoryTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
         
         // Get the movie for this cell
         let movie = movies[indexPath.item]
-        // Load the poster image
-        if let posterURL = movie.posterURL {
-            cell.loadImage(from: posterURL)
-        }
+        cell.configure(with: movie)
         cell.backgroundColor = .black
         return cell
     }
